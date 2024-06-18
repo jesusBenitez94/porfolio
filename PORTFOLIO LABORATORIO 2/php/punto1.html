@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operaciones Matematicas</title>
+</head>
+<body>
+<div class="container">
+    <h1>Hallar : <br>A + B – C + 100</h1>
+    <form action="punto1.php" method="post">
+
+        <div>
+            <label for="a">Ingrese el primer valor:</label>
+            <input type="number" id="a" name="a" required>
+        </div>
+
+        <div>
+             <label for="b">Ingrese el segundo Valor:</label>
+             <input type="number" id="b" name="b" required >
+        </div>
+
+        <div>
+            <label for="c">Ingrese el tercer Valor:</label>
+            <input type="number" id="c" name="c" required >
+        </div>
+
+        <button type="submit">Calcular</button>
+        <a href="../index.html" >Volver al MENU principal</a>
+    </form>
+</div>
+
+</body>
+</html>
+
+<style>
+    html {
+        font-size: 10px;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Epilogue', sans-serif;
+        background: #92cdc3;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 6rem;
+    }
+
+    .container {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 15px rgba(0,0,0,.15);
+        row-gap: 1rem;
+        padding: 3rem;
+        text-align: center;
+        background: white;
+        border-radius: 16px;
+        animation: show 1s ease forwards;
+        & > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        margin: 0;
+        line-height: 1.2;
+    }
+    label {
+        display: block;
+        font-size: 1.8rem;
+    }
+    input[type=number], button {
+        font-family: 'Epilogue', sans-serif;
+    }
+    input[type=number] {
+        padding: 12px 16px;
+        max-width: 100px;
+        text-align: right;
+        font-size: 1.6rem;
+        border: 3px solid #ccc;
+        border-radius: 4px;
+        margin-top: 6px;
+        &:focus {
+            outline: none;
+            border-color: #999;
+        }
+    }
+    button {
+        display: block;
+        font-size: 2rem;
+        padding: 1.6rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background: #5588ff;
+        color: #fff;
+        margin: 10px auto 0;
+        width: 100%;
+        font-weight: 600;
+    }
+    button:hover,
+    button:focus {
+        background: #2266ff;
+        cursor: pointer;
+        outline: none;
+    }
+</style>
